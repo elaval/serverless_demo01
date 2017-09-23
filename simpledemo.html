@@ -1,0 +1,8 @@
+<h1>Hi, this is a simple demo</h1>
+<p>Your lucky number is <span id='luckyNumber'></span></>
+
+<script>
+ const randomNumber = Math.floor( Math.random() * 100);
+ const targetElement = document.getElementById('luckyNumber');
+ targetElement.textContent = randomNumber;
+</script>
