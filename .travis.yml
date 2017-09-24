@@ -4,10 +4,6 @@ branches:
   only:
     - master
 
-before_script:
-
-script:
-
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
