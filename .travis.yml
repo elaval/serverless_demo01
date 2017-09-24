@@ -1,8 +1,17 @@
+language: node_js
+
+branches:
+  only:
+    - master
+
+before_script:
+
+script:
+
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: demo.firstmakers.com
-  acl: ''
-  on:
-    repo: elaval/serverless_demo01
+  skip_cleanup: true
+  upload-dir: demo01
