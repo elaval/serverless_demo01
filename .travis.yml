@@ -1,6 +1,6 @@
 language: node_js
 
-script:
+script: echo "No build needed"
 
 deploy:
   provider: s3
